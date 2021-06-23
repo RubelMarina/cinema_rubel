@@ -53,7 +53,7 @@
 }
 
 .panel-body {
-  border: 1px solid gray;
+  border: 1px solid #dddddd;
 }
 
 .panel .panel-heading {
@@ -64,8 +64,19 @@
   letter-spacing: 0.1em;
 }
 
+.input-lg,
 .input-group-lg > .form-control {
   font-size: 0.875rem;
+}
+
+.thumbnail {
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.list-group {
+  margin-bottom: 0px;
 }
 
 html {
@@ -84,6 +95,48 @@ a {
 
 a:hover, a:focus {
   text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: "PT Serif", serif;
+  font-size: 3rem;
+  margin: -10px 0 1em 0;
+}
+
+h1::after,
+h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-bottom: 3px solid #df8a13;
+  margin: 0.85em 0 0 15px;
+}
+
+h2 {
+  margin-left: 35px;
+  margin: 60px 0 45px 45px;
+  font-size: 2.5rem;
+}
+
+h2::before {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  margin: 0.25em 0 0 0;
+  content: "";
+  border-bottom: 3px solid #df8a13;
+}
+
+h3 {
+  font-size: 1rem;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .header-logo {
@@ -108,6 +161,49 @@ a:hover, a:focus {
   letter-spacing: 0.2em;
 }
 
+.top-films,
+.new-films {
+  position: relative;
+  overflow: hidden;
+}
+
+.top-films-row,
+.new-films-row {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+  margin-bottom: -15px;
+}
+
+.top-films-item,
+.new-films-item {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  margin-bottom: 15px;
+}
+
+.top-films-item__thumbnail,
+.new-films-item__thumbnail {
+  margin-bottom: 0;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.top-films-item__thumbnail:focus, .top-films-item__thumbnail:hover,
+.new-films-item__thumbnail:focus,
+.new-films-item__thumbnail:hover {
+  background-color: #df8a13;
+}
+
+.top-films-item__thumbnail:focus,
+.top-films-item__thumbnail:hover .new-films-item__title,
+.top-films-item__thumbnail:hover .top-films-item__title,
+.new-films-item__thumbnail:focus,
+.new-films-item__thumbnail:hover .new-films-item__title,
+.new-films-item__thumbnail:hover .top-films-item__title {
+  color: #ffffff;
+}
+
 .vertical-slider {
   border-radius: 4px;
   overflow: hidden;
@@ -115,6 +211,137 @@ a:hover, a:focus {
 
 .vertical-slider__image {
   width: 100%;
+}
+
+.user-login {
+  position: relative;
+}
+
+.user-login__tabs {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  border: none;
+  margin-right: -5px;
+}
+
+.user-login a {
+  padding: 14px 5px 12px !important;
+  border: none !important;
+  background-color: transparent !important;
+  color: gray;
+}
+
+.user-login .active a {
+  color: #ffffff !important;
+}
+
+.site-news-item {
+  clear: both;
+  position: relative;
+}
+
+.site-news-item:not(:last-child) {
+  min-height: 85px;
+  margin-bottom: 15px;
+}
+
+.site-news-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  width: calc(100% - 85px);
+  height: 1px;
+  background-color: #dddddd;
+}
+
+.site-news-item:hover a {
+  color: #df8a13;
+}
+
+.site-news-item:hover .thumbnail {
+  background-color: #df8a13;
+  border-color: #df8a13;
+}
+
+.site-news-item__thumbnail {
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 75px;
+}
+
+.site-news-item__image {
+  width: 100%;
+}
+
+.site-news-item__title {
+  margin-bottom: 10px;
+}
+
+.site-news-item__link {
+  display: -webkit-box;
+  overflow: hidden;
+  height: 50px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.site-news-item__data {
+  text-align: right;
+  color: #909090;
+  font-size: 0.8rem;
+}
+
+.best-films__body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.best-films__list {
+  margin-bottom: 0;
+}
+
+.best-films__item {
+  margin-left: -1px;
+  margin-right: -1px;
+  background-color: transparent;
+  color: #165690 !important;
+  padding-right: 55px;
+}
+
+.best-films__item:hover, .best-films__item:focus {
+  background-color: #df8a13 !important;
+  border-color: #df8a13;
+  color: #ffffff !important;
+}
+
+.best-films__item:hover .badge, .best-films__item:focus .badge {
+  background-color: #232323;
+}
+
+.best-films__item:first-child {
+  border-radius: 0;
+  border-top: none;
+}
+
+.best-films__item:last-child {
+  border-radius: 0;
+  border-bottom: none;
+}
+
+.best-films__badge {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 @media (min-width: 576px) {

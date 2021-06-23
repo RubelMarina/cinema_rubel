@@ -65,7 +65,7 @@
 .panel {
   background-color: darken($color-light, 7%);
   border: none;
-  
+
   &:not(:last-of-type) {
     margin-bottom: $gap * 2;
   }
@@ -75,19 +75,29 @@
   }
 
   &-body {
-    border: 1px solid gray;
+    border: 1px solid $color-gray;
   }
 
-.panel-heading {
-  color: $color-light;
-  background-color: $color-accent;
-  border-color: $color-accent;
-  font-size: 1.2rem;
-  letter-spacing: 0.1em;
-}
+  .panel-heading {
+    color: $color-light;
+    background-color: $color-accent;
+    border-color: $color-accent;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+  }
 }
 
-.input-group-lg>.form-control {
+.input {
+  &-lg,
+  &-group-lg > .form-control {
     font-size: 0.875rem;
   }
- 
+}
+
+.thumbnail {
+  transition: background-color 0.25s;
+}
+
+.list-group {
+  margin-bottom: 0px;
+}

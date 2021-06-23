@@ -6,7 +6,7 @@
   text-overflow: ellipsis;
 }
 
-@mixin block-shortener($fz: 1rem, $lh: 1.5, $h: 70px, $l: 3) {
+@mixin block-shortener($fz: 1rem, $lh: 1.5, $h: 50px, $l: 2) {
   display: -webkit-box;
   overflow: hidden;
 
