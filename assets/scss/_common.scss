@@ -1,24 +1,30 @@
 html {
   font-size: $font-size;
   overflow-y: scroll;
+  overflow-x: hidden;
+  max-width: 1920px;
+
 }
 body {
   font-size: $font-size;
   font-family: $font-main;
 }
 a {
-  color: $color-primary;
+    color: $color-primary;
   &:hover,
   &:focus {
     text-decoration: none;
   }
 }
 
+h1 {
+  margin: -7.5px 0 45px 0; 
+}
 h1,
 h2 {
   font-family: $font-header;
   font-size: 3rem;
-  margin: -10px 0 1em 0;
+ 
 
   &::after {
     content: "";
@@ -45,11 +51,16 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   display: block;
   overflow: hidden;
   margin: 0;
-  font-weight: bold;
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+h4 {
+  color: $color-light;
 }

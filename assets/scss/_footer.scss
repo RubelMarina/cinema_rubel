@@ -1,0 +1,41 @@
+.footer {
+  padding-top: 45px;
+  color: $color-light;
+  background-color: $color-dark;
+
+
+
+  &-fifth {
+    margin: 20px 0;
+    text-align: center;
+  }
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+
+  @include md {
+   width: 25%; 
+  }
+}
+
+.footer a {
+  color: $color-footer;
+&:hover,
+  &:focus {
+    color: $color-light;
+  }
+}
+
+.footer-fifth a {
+  color: $color-light;
+  font-weight: bold;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}

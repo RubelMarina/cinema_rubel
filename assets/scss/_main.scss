@@ -22,16 +22,59 @@
 
       &:focus,
       &:hover {
-      background-color: $color-accent;
-    }
-
-      &:focus,
-      &:hover .new-films-item__title, 
-      &:hover .top-films-item__title{
-        color: $color-light;
+        background-color: $color-accent;
       }
 
+      &:focus,
+      &:hover .new-films-item__title,
+      &:hover .top-films-item__title {
+        color: $color-light;
+      }
+    }
+    &__title {
+      font-size: 1rem;
+      text-align: center;
     }
   }
+}
+
+.film {
+  position: relative;
+  overflow: hidden;
+
+  &-news {
+    &:focus,
+    &:hover .film-news-item__thumbnail{
+      background-color: $color-accent;
+    }
+  
+    &:focus,
+    &:hover .film-news-title {
+      color: $color-accent;
+    }
+  
+    &:focus,
+    &:hover .film-news-item__button {
+      background-color: $color-accent;
+    }
   }
 
+  &-news-title {
+    font-size: 1.5rem;
+    color: $color-primary;
+  }
+
+  &-news-item {
+    &__description {
+      text-align: justify;
+    }
+
+    &__button {
+      float: right;
+      margin-bottom: 30px;
+      color: $color-light;
+      background-color: lighten($color-accent, 10%);
+      transition: background-color 0.25s;
+    }
+  }
+}
