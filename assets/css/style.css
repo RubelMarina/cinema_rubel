@@ -219,7 +219,8 @@ h4 {
   font-weight: bold;
   overflow: hidden;
   text-align: center;
-  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .top-films-item__thumbnail,
