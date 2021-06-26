@@ -74,10 +74,20 @@
   -webkit-transition: background-color 0.25s;
   -o-transition: background-color 0.25s;
   transition: background-color 0.25s;
+  margin-bottom: 0;
 }
 
 .list-group {
   margin-bottom: 0px;
+}
+
+.film-reviews .panel {
+  background-color: #ffffff;
+  border: none;
+}
+
+.badge {
+  font-size: 0.8em;
 }
 
 html {
@@ -122,8 +132,6 @@ h2::after {
 
 h2 {
   margin-left: 35px;
-  margin: 60px 0 45px 45px;
-  font-size: 2.5rem;
 }
 
 h2::before {
@@ -139,11 +147,10 @@ h3 {
   font-size: 1.5rem;
   display: block;
   overflow: hidden;
-  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
   text-align: left;
   white-space: nowrap;
-  margin-bottom: 10px;
-  margin-top: 20px;
 }
 
 h4 {
@@ -192,9 +199,19 @@ h4 {
   margin-bottom: 15px;
 }
 
+.top-films-item__title,
+.new-films-item__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+
 .top-films-item__thumbnail,
 .new-films-item__thumbnail {
-  margin-bottom: 0;
   -webkit-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
@@ -215,8 +232,8 @@ h4 {
   color: #ffffff;
 }
 
-.top-films-item__title,
-.new-films-item__title {
+.top-films__title,
+.new-films__title {
   font-size: 1rem;
   text-align: center;
 }
@@ -224,6 +241,14 @@ h4 {
 .film {
   position: relative;
   overflow: hidden;
+}
+
+.film-news {
+  margin-bottom: 20px;
+}
+
+.film-news:last-of-type {
+  margin-bottom: 0;
 }
 
 .film-news:focus,
@@ -244,6 +269,8 @@ h4 {
 .film-news-title {
   font-size: 1.5rem;
   color: #165690;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .film-news-item__description {
@@ -258,6 +285,54 @@ h4 {
   -webkit-transition: background-color 0.25s;
   -o-transition: background-color 0.25s;
   transition: background-color 0.25s;
+}
+
+.film-reviews, .film-description, .film-example {
+  position: relative;
+  overflow: hidden;
+}
+
+.film-reviews__well, .film-description__well, .film-example__well {
+  text-align: center;
+  background-color: #f1f1f1;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.film-reviews__wrapper, .film-description__wrapper, .film-example__wrapper {
+  font-size: 1.2em;
+  white-space: nowrap;
+  margin-right: 15px;
+}
+
+.film-reviews__embed, .film-description__embed, .film-example__embed {
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.film-description__well {
+  text-align: left;
+  background-color: #f1f1f1;
+}
+
+.film-reviews {
+  background-color: #ffffff;
+}
+
+.film-reviews-first, .film-reviews-second {
+  padding-left: 5px;
+}
+
+.film-reviews-panel__body {
+  margin-bottom: 30px;
+  border: none;
+  background-color: #dddddd;
+  border-radius: 0 0 4px 4px;
+}
+
+.film-comment__button {
+  float: right;
 }
 
 .vertical-slider {
@@ -429,14 +504,11 @@ h4 {
   font-weight: bold;
 }
 
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 @media (min-width: 576px) {
+  h2 {
+    margin: 60px 0 45px 45px;
+    font-size: 2.5rem;
+  }
   .header-logo__title {
     font-size: 3.5rem;
     letter-spacing: 0.33em;
@@ -456,12 +528,6 @@ h4 {
   }
 }
 
-@media (max-width: 991.8px) {
-  .footer ul {
-    width: 25%;
-  }
-}
-
 @media (max-width: 767.8px) {
   .navbar-inverse .navbar-nav > li > a {
     text-align: center;
@@ -475,6 +541,10 @@ h4 {
 }
 
 @media (max-width: 575.8px) {
+  h2 {
+    margin: 45px 0 30px 45px;
+    font-size: 1.75rem;
+  }
   .header-logo__title {
     font-size: 2.5rem;
     letter-spacing: 0.2em;

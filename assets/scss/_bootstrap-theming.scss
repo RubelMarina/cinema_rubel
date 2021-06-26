@@ -97,8 +97,18 @@
 
 .thumbnail {
   transition: background-color 0.25s;
+  margin-bottom: 0;
 }
 
 .list-group {
   margin-bottom: 0px;
+}
+
+.film-reviews .panel {
+  background-color: $color-light;
+  border: none;
+}
+
+.badge {
+  font-size: 0.8em;
 }

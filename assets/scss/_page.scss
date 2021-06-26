@@ -1,0 +1,54 @@
+.film {
+  &-reviews,
+  &-description,
+  &-example {
+    position: relative;
+    overflow: hidden;
+
+    &__well {
+      text-align: center;
+      background-color: $color-well-gray;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    &__wrapper {
+      font-size: 1.2em;
+      white-space: nowrap;
+      margin-right: 15px;
+    }
+
+    &__embed {
+      border: 1px solid $color-well-border;
+      border-bottom: none;
+      border-radius: 4px 4px 0 0;
+    }
+  }
+
+  &-description {
+    &__well {
+      text-align: left;
+      background-color: $color-well-gray;
+    }
+  }
+
+  &-reviews {
+    background-color: $color-light;
+
+    &-first,
+    &-second {
+      padding-left: 5px;
+    }
+
+    &-panel__body {
+      margin-bottom: 30px;
+      border: none;
+      background-color: $color-gray;
+      border-radius: 0 0 4px 4px;
+    }
+  }
+
+  &-comment__button {
+    float: right;
+  }
+}
