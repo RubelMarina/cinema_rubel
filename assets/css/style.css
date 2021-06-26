@@ -30,6 +30,10 @@
   background-color: #517ba2;
 }
 
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #053159;
+}
+
 .navbar-header {
   text-align: center;
 }
@@ -177,6 +181,14 @@ h4 {
   color: #ffffff;
   font-size: 1.15rem;
   letter-spacing: 0.2em;
+}
+
+.main .user-login {
+  margin-bottom: 60px;
+}
+
+.main .site-search {
+  margin-bottom: 45px;
 }
 
 .top-films,
@@ -360,7 +372,7 @@ h4 {
   padding: 14px 5px 12px !important;
   border: none !important;
   background-color: transparent !important;
-  color: gray;
+  color: #dddddd;
 }
 
 .user-login .active a {
@@ -541,6 +553,10 @@ h4 {
 }
 
 @media (max-width: 575.8px) {
+  h1 {
+    margin: 0 0 30px;
+    font-size: 2rem;
+  }
   h2 {
     margin: 45px 0 30px 45px;
     font-size: 1.75rem;

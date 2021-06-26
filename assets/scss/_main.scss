@@ -1,5 +1,13 @@
 .main {
   @extend %margin-bottom-lg;
+
+  & .user-login {
+    margin-bottom: 60px;
+  }
+    & .site-search {
+      margin-bottom: 45px;
+  }
+
 }
 
 .top-films,

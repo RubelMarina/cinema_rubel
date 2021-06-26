@@ -19,6 +19,10 @@ a {
 
 h1 {
   margin: -7.5px 0 45px 0; 
+  @include xs {
+    margin: 0 0 30px;
+    font-size: 2rem;
+  }
 }
 h1,
 h2 {

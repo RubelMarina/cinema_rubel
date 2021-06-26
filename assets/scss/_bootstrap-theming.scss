@@ -3,23 +3,25 @@
   background-color: darken($color-dark, 4%);
   margin-bottom: 0;
 
+
   .navbar-nav {
     > li > a {
       transition: background-color 0.5s;
-
+      
       @include sm-min {
         border-radius: 4px;
       }
       @include sm {
         text-align: center;
       }
-
+      
       &:hover,
       &:focus {
         background-color: $color-primary;
       }
-    }
-
+    } 
+  
+    
     > .active > a {
       background-color: $color-primary-dark;
 
@@ -40,6 +42,11 @@
   @include sm {
     margin-bottom: 0;
   }
+}
+
+
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #053159;
 }
 
 .navbar-right {
@@ -112,3 +119,4 @@
 .badge {
   font-size: 0.8em;
 }
+
